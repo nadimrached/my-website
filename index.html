@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Consultancy Business</title>
+</head>
+<body onload="openTab('home')">
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="openTab('home')">Home</a></li>
+            <li><a href="#services" onclick="openTab('services')">Services</a></li>
+            <li><a href="#about" onclick="openTab('about')">About Us</a></li>
+            <li><a href="#contact" onclick="openTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="content-tab home">
+        <h1>Welcome to Nadim's Consultancy Business!</h1>
+        <p>We are dedicated to providing top-notch consultancy services to businesses worldwide. Our journey began in a small office with a big vision: to empower businesses to thrive through strategic guidance and expert advice.</p>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Experienced Consultants</li>
+            <li>Customized Solutions</li>
+            <li>Proven Track Record</li>
+            <li>Client-Centric Approach</li>
+        </ul>
+    </div>
+
+    <div id="services" class="content-tab services">
+        <h1>Our Services</h1>
+        <p>Unlock the potential of your business with our diverse range of consultancy services:</p>
+        <ul>
+            <li><strong>Strategic Planning:</strong> Develop a roadmap for your business success.</li>
+            <li><strong>Financial Analysis:</strong> Gain insights into your financial performance.</li>
+            <li><strong>Market Research:</strong> Understand market trends and opportunities.</li>
+            <li><strong>Project Management:</strong> Ensure successful project execution.</li>
+        </ul>
+    </div>
+
+    <div id="about" class="content-tab about">
+        <h1>About Our Consultancy</h1>
+        <p>Founded in 2005, our consultancy has been a trusted partner for businesses seeking growth and innovation. From humble beginnings, we have evolved into a team of passionate consultants, driving success for our clients.</p>
+        <h2>Our Story</h2>
+        <p>Our journey started with a small team passionate about making a difference. Over the years, we have grown, faced challenges, and celebrated successes alongside our clients.</p>
+        <h2>Our Mission</h2>
+        <p>Empowering businesses to thrive by providing exceptional consultancy services that drive innovation, efficiency, and growth.</p>
+        <h2>Our Values</h2>
+        <ul>
+            <li>Integrity</li>
+            <li>Excellence</li>
+            <li>Collaboration</li>
+            <li>Innovation</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="content-tab contact">
+        <h1>Contact Us</h1>
+        <p>Ready to take your business to the next level? Reach out to us for personalized assistance and let's embark on a journey of success together.</p>
+        <address>
+            Email: <a href="mailto:nadim.zein18@audencia.com">nadim.zein18@audencia.com</a><br>
+            Phone: 077 8413419<br>
+            Address: Nantes, 44300, La Close
+        </address>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Nadim's Consultancy Business. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var tabs = document.getElementsByClassName("content-tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            var selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
